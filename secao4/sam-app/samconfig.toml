@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "PrimeiraFuncaoSAMStack"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-atyje4cwcrne"
+s3_prefix = "PrimeiraFuncaoSAMStack"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["HelloWorldFunction=836354511707.dkr.ecr.us-east-1.amazonaws.com/primeirafuncaosamstack7b8461e6/helloworldfunction19d43fc4repo"]
